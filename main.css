@@ -1,0 +1,176 @@
+html {
+  background: url(rebornbackground.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+}
+
+h1 {
+  text-align: center;
+  color: white;
+  background-color: black;
+  padding: 5px;
+  margin: 0px;
+}
+
+#trainer {
+  width: 500px;
+  height:auto;
+  margin-left: 370px;
+}
+
+th {
+  text-align: center;
+  font-size: 24px;
+  animation: fadeLeft 2s;
+}
+
+td {
+  text-align: center;
+  font-size: 17px;
+  animation: fadeLeft 2s;
+}
+
+h2 {
+  color: white;
+  padding: 0.5%;
+  -moz-box-shadow: 3px 4px 0px 0px #FFFFF0;
+	-webkit-box-shadow: 3px 4px 0px 0px #FFFFF0;
+	box-shadow: 3px 4px 0px 0px #FFFFF0;
+  width: 100%;
+}
+
+img {
+  width: 190px;
+  height: auto;
+}
+
+Button {
+  -moz-box-shadow: 3px 4px 0px 0px #8a2a21;
+	-webkit-box-shadow: 3px 4px 0px 0px #8a2a21;
+	box-shadow: 3px 4px 0px 0px #8a2a21;
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #c62d1f), color-stop(1, #f24437));
+	background:-moz-linear-gradient(top, #c62d1f 5%, #f24437 100%);
+	background:-webkit-linear-gradient(top, #c62d1f 5%, #f24437 100%);
+	background:-o-linear-gradient(top, #c62d1f 5%, #f24437 100%);
+	background:-ms-linear-gradient(top, #c62d1f 5%, #f24437 100%);
+	background:linear-gradient(to bottom, #c62d1f 5%, #f24437 100%);
+	background-color:#c62d1f;
+	-moz-border-radius:18px;
+	-webkit-border-radius:18px;
+	border-radius:18px;
+	border:1px solid #000000;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:17px;
+	padding:7px 25px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #810e05;
+  outline: none;
+}
+Button:hover {
+  background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #f24437), color-stop(1, #c62d1f));
+	background:-moz-linear-gradient(top, #f24437 5%, #c62d1f 100%);
+	background:-webkit-linear-gradient(top, #f24437 5%, #c62d1f 100%);
+	background:-o-linear-gradient(top, #f24437 5%, #c62d1f 100%);
+	background:-ms-linear-gradient(top, #f24437 5%, #c62d1f 100%);
+	background:linear-gradient(to bottom, #f24437 5%, #c62d1f 100%);
+	background-color:#f24437;
+}
+Button:active {
+	position:relative;
+	top:1px;
+}
+
+.badges {
+  line-height: 400px;
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.pokeName {
+  width: 100%;
+}
+
+#garTable{
+  position: absolute;
+  left: 250px;
+  bottom: -90px;
+  color: #FFFFFF;
+  background-color: #8B008B;
+  padding: 20px;
+  text-align: center;
+  border-style: solid;
+  border-color: indigo;
+  border-width: 4px;
+  width: 75%;
+  text-transform: capitalize;
+}
+
+#scepTable {
+  position: absolute;
+  left: 250px;
+  bottom: -770px;
+  color: #FFFFFF;
+  background-color: #8B008B;
+  padding: 20px;
+  text-align: center;
+  border-style: solid;
+  border-color: indigo;
+  border-width: 4px;
+  width: 75%;
+}
+
+#inferTable {
+  position: absolute;
+  left: 250px;
+  bottom: -430px;
+  color: #FFFFFF;
+  background-color: #8B008B;
+  padding: 20px;
+  text-align: center;
+  border-style: solid;
+  border-color: indigo;
+  border-width: 4px;
+  width: 75%;
+}
+
+@keyframes fadeLeft {
+  0%  { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+/* @media screen and (max-width: 1000px) {
+  body {
+    width: 100%;
+  }
+} */
+
+@media only screen and (max-width: 600px) {
+  h2 {
+    width: 100%;
+  }
+
+  #garTable {
+    width: 500px;
+    height: 100px;
+    bottom: ;
+  }
+  #inferTable {
+    width: 1000px;
+    height: 100px;
+  }
+  #scepTable {
+    width: 1000px;
+    height: 100px;
+  }
+}

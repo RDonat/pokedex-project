@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Pokedex Project</title>
+    <link rel="stylesheet" href="main.css">
+    <link href="https://fonts.googleapis.com/css?family=Permanent+Marker|Teko" rel="stylesheet">
+  </head>
+  <body>
+    <h1>Luxor League Champion Rajin Appears Before You</h1>
+    <audio controls autoplay loop hidden>
+      <source src='Olivine Lighthouse.mp3' type="audio/mpeg">
+    </audio>
+    <br>
+    <br>
+    <img id="trainer" src="VsKuro.png" alt="VSKuro">
+    <br>
+      <img class="badges" style="margin-left: 450px;" alt="Earth" src="Earth.png">
+      <img class="badges" alt="Rising" src="Rising.png">
+      <img class="badges" alt="Volcano" src="Volcano.png">
+      <img class="badges" alt="Cliff" src="Cliff.png">
+      <img class="badges" alt="Beacon" src="Beacon.png">
+      <img class="badges" alt="Rainbow" src="Rainbow.png">
+      <img class="badges" alt="Psychic" src="Psychic.png">
+      <img class="badges" alt="Legend" src="Legend.png">
+    <br>
+    <div class="pokeName">
+      <h2 style="background: #26466D;">Garchomp</h2>
+    </div>
+    <img src="garchomp.png" alt="GarSprite">
+    <div class="garData">
+      <p id="garStats"></p>
+    </div>
+    <button id="garDataButton" type="button" name="Garchomp Info">Load More Data</button>
+    <br>
+    <div class="pokeName">
+      <h2 style="background: #FF2400">Infernape</h2>
+    </div>
+    <img src="infernape.gif" alt="InferSprite">
+    <div class="inferData">
+      <p id="inferStats"></p>
+    </div>
+    <button id="inferDataButton" type="button" name="Infernape Info">Load More Data</button>
+    <br>
+    <h2 style="background: #228B22">Sceptile</h2>
+    <img src="sceptile.png" alt="ScepSprite">
+    <div class="scepData">
+      <p id="scepStats"></p>
+    </div>
+    <button id="scepDataButton" type="button" name="Sceptile Info">Load More Data</button>
+    <br>
+    <br>
+    <br>
+    <div id="Data" style="color: red;">
+      <div id="dis">
+
+      </div>
+    </div>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script type="text/javascript" src="main.js"></script>
+  </body>
+</html>
