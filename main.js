@@ -1,8 +1,8 @@
-let apiUrl = "http://fizal.me/pokeapi/api/v2/name/";
+let apiUrl = "https://fizal.me/pokeapi/api/v2/name/";
 
 
 function loadGarchompData(){
-      axios.get('http://fizal.me/pokeapi/api/v2/name/garchomp.json')
+      axios.get('https://fizal.me/pokeapi/api/v2/name/garchomp.json')
       .then(function(response) {
   //handle success
       let Hp = response.data.stats[5].base_stat;
@@ -28,7 +28,7 @@ function loadGarchompData(){
     }
 
     function loadInfernapeData(){
-      axios.get('http://fizal.me/pokeapi/api/v2/name/infernape.json')
+      axios.get('https://fizal.me/pokeapi/api/v2/name/infernape.json')
       .then(function(response) {
   //handle success
       let Hp = response.data.stats[5].base_stat;
@@ -43,7 +43,7 @@ function loadGarchompData(){
       let Move2 = response.data.moves[82].move.name;
       let Move3 = response.data.moves[52].move.name;
       let Move4 = response.data.moves[1].move.name;
-      let Infernape = new Pokemon();
+      let Infernape = new Pokemon()
       let inferData = document.getElementById('inferStats');
       inferData.innerHTML = ('<table id="inferTable">') + ('<tr>') + ('<th>') + 'Stats' + ('</th>') + ('<th>') + 'Abilities' + ('</th>') + ('<th>') + 'Moves' + ('</th>') + ('</tr>') + ('<tr>') + ('<td>') + "HP: " + Hp + ('<br>') + "Atk: " + Atk + ('<br>') + "Def: " + Def + ('<br>') + "Sp.A: " + Sp_A + ('<br>') + "Sp.D: " + Sp_D + ('<br>') + "Spd: " + Spd + ('<br>') + ('</td>') + ('<td>') + "Primary: " + Abil2 + ('<br>') + ('<br>') + "Hidden: " + Abil1 + ('<br>') + ('<br>') + "My Choice: " + Abil1 + ('</td>') + ('<td>') + "Slot 1: " + Move1 + ('<br>') + "Slot 2: " + Move2 + ('<br>') + "Slot 3: " + Move3 + ('<br>') + "Slot 4: " + Move4 + ('</td>') + ('</tr>') + ('</table>');
       console.log(response)
@@ -54,7 +54,7 @@ function loadGarchompData(){
   }
 
   function loadSceptileData(){
-    axios.get('http://fizal.me/pokeapi/api/v2/name/sceptile.json')
+    axios.get('https://fizal.me/pokeapi/api/v2/name/sceptile.json')
     .then(function(response) {
   //handle success
       let Hp = response.data.stats[5].base_stat;
@@ -148,7 +148,7 @@ class Pokemon {
 }
 
 class Trainer {
-  constructor(name, title) {
+  constructor() {
     this.pokeData =[];
 
   }
@@ -159,11 +159,15 @@ class Trainer {
     this.pokeData.push(Pokemon);
   }
   get() {
-    
+    for(let i = 0; i < this.pokeData.length; i++) {
+      if(name === this.pokeData[i]) {
+        return this.pokeData[i];
+      }
+    }
   }
 }
 
-let Rajin = new Trainer('Rajin', 'VsKuro.png', 'Eterna City', 'animated fadeInLeftBig', 'text')
+// let Rajin = new Trainer('Rajin', 'VsKuro.png', 'Eterna City', 'animated fadeInLeftBig', 'text')
 
 axios.get(apiUrl + 'garchomp' + '.json')
 .then();
