@@ -1,8 +1,8 @@
-let apiUrl = "https://fizal.me/pokeapi/api/v2/name/";
+let apiUrl = "http://fizal.me/pokeapi/api/v2/name/";
 
 
 function loadGarchompData(){
-      axios.get('https://fizal.me/pokeapi/api/v2/name/garchomp.json')
+      axios.get('http://fizal.me/pokeapi/api/v2/name/garchomp.json')
       .then(function(response) {
   //handle success
       let Hp = response.data.stats[5].base_stat;
@@ -28,7 +28,7 @@ function loadGarchompData(){
     }
 
     function loadInfernapeData(){
-      axios.get('https://fizal.me/pokeapi/api/v2/name/infernape.json')
+      axios.get('http://fizal.me/pokeapi/api/v2/name/infernape.json')
       .then(function(response) {
   //handle success
       let Hp = response.data.stats[5].base_stat;
@@ -54,7 +54,7 @@ function loadGarchompData(){
   }
 
   function loadSceptileData(){
-    axios.get('https://fizal.me/pokeapi/api/v2/name/sceptile.json')
+    axios.get('http://fizal.me/pokeapi/api/v2/name/sceptile.json')
     .then(function(response) {
   //handle success
       let Hp = response.data.stats[5].base_stat;
